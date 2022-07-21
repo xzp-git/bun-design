@@ -1,0 +1,19 @@
+{
+  "name": "bun-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C play dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bun-design/components": "workspace:*",
+    "@bun-design/theme-chalk": "workspace:*",
+    "@bun-design/utils": "workspace:*",
+    "typescript": "^4.7.4",
+    "vue": "^3.2.37"
+  }
+}
