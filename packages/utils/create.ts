@@ -47,7 +47,7 @@ function createBem(prefixName:string) {
     }
 }
 
- function createNamespace(name:string) {
+export function createNamespace(name:string) {
     const prefixName = `b-${name}`
     return createBem(prefixName)
 }
@@ -57,14 +57,14 @@ function createBem(prefixName:string) {
  * bem.e("xx") b-button__xx 
  * 
  */
-let bem = createNamespace("button")
+// let bem = createNamespace("button")
 
-console.log(bem.b("box"));
-console.log(bem.e("inner"));
-console.log(bem.m("disabled"));
-console.log(bem.bm("box", "disabled"));
-console.log(bem.em("inner", "disabled"));
-console.log(bem.bem("box", "inner", "disabled"));
+// console.log(bem.b("box"));
+// console.log(bem.e("inner"));
+// console.log(bem.m("disabled"));
+// console.log(bem.bm("box", "disabled"));
+// console.log(bem.em("inner", "disabled"));
+// console.log(bem.bem("box", "inner", "disabled"));
 
 
 
