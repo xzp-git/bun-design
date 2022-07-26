@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {Accessibility, AddCircle, AirplaneOutline} from "@vicons/ionicons5"
+import { Accessibility, AddCircle, AirplaneOutline } from '@vicons/ionicons5'
 </script>
 
 <template>
@@ -12,5 +12,5 @@ import {Accessibility, AddCircle, AirplaneOutline} from "@vicons/ionicons5"
   <BIcon :size="40" color="pink">
     <AirplaneOutline />
   </BIcon>
+  <!-- <h1 class="text-3xl font-bold underline">tailwindCss</h1> -->
 </template>
-  
