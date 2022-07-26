@@ -1,5 +1,11 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
+import BIcon from "@bun-design/components/icon";
 
-createApp(App).mount('#app')
+const plugins = [BIcon]
+
+const app = createApp(App)
+plugins.forEach((comp) => app.use(comp))
+    
+app.mount('#app')

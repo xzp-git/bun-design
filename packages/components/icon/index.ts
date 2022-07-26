@@ -1,4 +1,9 @@
-import BIcon from "./src/icon.vue";
+import _BIcon from "./src/icon.vue";
+import { withInstall } from "@bun-design/utils/with-install";
+
+ 
+
+const BIcon = withInstall(_BIcon)
 
 export default BIcon;
 
