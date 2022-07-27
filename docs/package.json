@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev ."
+    "dev": "vitepress dev .",
+    "serve": "vitepress serve .",
+    "build": "vitepress build ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.4"
+    "vitepress": "1.0.0-alpha.4",
+    "vitepress-theme-demoblock": "^1.4.2"
   }
 }
