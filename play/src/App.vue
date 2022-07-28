@@ -12,13 +12,7 @@ import { Accessibility, AddCircle, AirplaneOutline } from '@vicons/ionicons5'
   <BIcon :size="40" color="pink">
     <AirplaneOutline />
   </BIcon>
-  <b-button
-    size="medium"
-    type="primary"
-    :round="true"
-    :loading="true"
-    :disabled="true"
-  >
+  <b-button size="medium" type="primary" :round="true" :loading="true">
     <b-icon :size="20" color="red">
       <AirplaneOutline />
     </b-icon>
