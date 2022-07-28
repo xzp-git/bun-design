@@ -1,6 +1,6 @@
 # Icon 图标
 
-bun-design 推荐使用 xicons 作为图标库。
+bun-design 推荐使用 [xicons](https://www.xicons.org/#/) 作为图标库。
 
 ```
 $ pnpm install @vicons/ionicons5
