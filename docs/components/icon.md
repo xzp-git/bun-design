@@ -10,35 +10,6 @@ $ pnpm install @vicons/ionicons5
 
 - 如果你想像用例一样直接使用，你需要全局注册组件，才能够直接在项目里使用。
 
-<script setup lang="ts">
-import { CashOutline } from '@vicons/ionicons5'
-</script>
-
-<BIcon color="red" size="40" >
-<CashOutline/>
-</BIcon>
-
-<BIcon color="green" size="40">
-  <CashOutline/>
-</BIcon>
-<BIcon color="blue" size="40">
-  <CashOutline/>
-</BIcon>
-<div>
-
-<BIcon color="red" size="60">
-  <CashOutline/>
-</BIcon>
-
-<BIcon color="green" size="60">
-  <CashOutline/>
-</BIcon>
-
-<BIcon color="blue" size="60">
-  <CashOutline/>
-</BIcon>
-</div>
-
 ```vue
 <script setup lang="ts">
 import { CashOutline } from '@vicons/ionicons5'
