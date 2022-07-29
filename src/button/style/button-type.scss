@@ -1,0 +1,58 @@
+@use '../../theme-chalk/common/variable' as *;
+
+// 按钮类型的配置
+$type: (
+  primary: (
+    color: $b-light-text,
+    background-color: $b-primary
+  ),
+  secondary: (
+    color: $b-text,
+    background-color: $b-block,
+    border-color: $b-line
+  ),
+  text: (
+    padding: 0,
+    color: $b-brand-active
+  )
+);
+
+// 伪类的配置
+$pseudo: (
+  primary: (
+    hover: (
+      background-color: $b-primary-hover
+    ),
+    focus: (
+      background-color: $b-primary-hover
+    ),
+    active: (
+      background-color: $b-primary-active
+    )
+  ),
+  secondary: (
+    hover: (
+      border-color: $b-form-control-line-active,
+      color: $b-brand-active
+    ),
+    focus: (
+      border-color: $b-form-control-line-active,
+      color: $b-brand-active
+    ),
+    active: (
+      border-color: $b-form-control-line-active,
+      color: $b-brand-active
+    )
+  ),
+  text: (
+    hover: (
+      color: $b-brand-active-focus
+    ),
+    focus: (
+      color: $b-brand-active-focus
+    ),
+    active: (
+      color: $b-brand-active-focus
+    )
+  )
+);

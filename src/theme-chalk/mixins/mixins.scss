@@ -1,0 +1,57 @@
+@use 'config' as *;
+@forward 'config';
+// .z-button{}
+@mixin b($block) {
+  $B: $namespace + '-' + $block;
+  .#{$B} {
+    @content;
+  }
+}
+// .z-button.is-xxx
+@mixin when($state) {
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
+// &--primary => .z-button--primary
+@mixin m($modifier) {
+  @at-root {
+    #{& + $modifier-separator + $modifier} {
+      @content;
+    }
+  }
+}
+// &__header  => .z-button__header
+@mixin e($element) {
+  @at-root {
+    #{& + $element-separator + $element} {
+      @content;
+    }
+  }
+}
+
+// button-mixin
+@mixin button-variant($variant, $pseudo: false) {
+  @each $key, $value in $variant {
+    // 第一层是多态的类型
+    @include m($key) {
+      @each $item-key, $item-value in $value {
+        // 第二层是多态类型下的样式
+        @if $pseudo {
+          // 如果是伪类就继续第三层
+          &:#{$item-key} {
+            @each $sub-item-key, $sub-item-value in $item-value {
+              // 第三层是伪类的样式
+              #{$sub-item-key}: $sub-item-value;
+            }
+          }
+        } @else {
+          // 不是伪类就直接设置样式
+          #{$item-key}: $item-value;
+        }
+      }
+    }
+  }
+}
