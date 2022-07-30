@@ -10,4 +10,14 @@
 
   // 导入hover等伪类样式
   @include button-variant($pseudo, true);
+
+  // 导入size相关样式
+  @include button-variant($size);
+  &[disabled] {
+    cursor: not-allowed;
+  }
+  // 块级按钮
+  @include when(block) {
+    @apply block w-full;
+  }
 }

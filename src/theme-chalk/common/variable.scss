@@ -1,6 +1,8 @@
 // 定义主题变量
 $b-border-radius: var(--s-border-radius, 2px); //一般圆角
+$b-font-size-sm: var(--s-font-size-md, 10px); //当组件size为''时使用此字号大小
 $b-font-size-md: var(--s-font-size-md, 12px); //当组件size为''时使用此字号大小
+$b-font-size-lg: var(--s-font-size-md, 14px); //当组件size为''时使用此字号大小
 $b-animation-duration-slow: var(--s-animation-duration-slow, 300ms);
 $b-animation-ease-in-out-smooth: var(
   --s-animation-ease-in-out-smooth,
@@ -10,6 +12,10 @@ $b-light-text: var(--s-light-text, #ffffff); // 有色深色背景下字体颜�
 $b-primary: var(--s-primary, #5e7ce0); // 主要按钮，同品牌色
 $b-primary-hover: var(--s-primary-hover, #7693f5); // 主要按钮悬停
 $b-primary-active: var(--s-primary-active, #344899); // 主要按钮激活
+$b-primary-disabled: var(--s-primary-disabled, #98a8df); // 主要按钮禁用状态
+$b-disabled-text: var(--s-disabled-text, #757a83); // 禁用文本
+$b-disabled-bg: var(--s-disabled-bg, #c6c9cf); // 禁用背景
+$b-disabled-line: var(--s-disabled-line, #a5a8ad); // 禁用边框
 $b-text: var(--s-text, #252b3a); // 正文文本
 $b-block: var(
   --s-block,

@@ -6,16 +6,18 @@ export default defineComponent({
   name: 'BButton',
   props: buttonProps,
   setup(props, { slots }) {
-    const { type } = toRefs(props)
+    const { type, size, disabled, block } = toRefs(props)
     const bem = createNamespace('button')
     return () => {
       const defaultSlot = slots.default ? slots.default() : '按钮'
       return (
         <button
+          disabled={disabled.value}
           class={[
             bem.b(),
-            bem.m(props.type)
-            // bem.is('round', round),
+            bem.m(type.value),
+            bem.m(size.value),
+            bem.is('block', block.value)
             // bem.is('loading', loading),
             // bem.is('disabled', disabled)
           ]}
