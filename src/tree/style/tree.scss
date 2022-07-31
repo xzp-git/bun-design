@@ -1,0 +1,4 @@
+@use '../../theme-chalk/mixins/mixins' as *;
+@include b(tree) {
+/* your component style */
+}
