@@ -11,7 +11,9 @@
     "docs:serve": "vitepress serve docs",
     "docs:build": "vitepress build docs",
     "test": "vitest",
-    "build:components": "node ./scripts/build.js"
+    "build:components": "node ./scripts/build.js",
+    "build:cli": "pnpm -C cli build",
+    "cli": "pnpm -C cli  cli"
   },
   "dependencies": {
     "vue": "^3.2.37"

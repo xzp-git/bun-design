@@ -11,7 +11,7 @@ export * from './src/tree-types'
 export type TreeInstance = InstanceType<typeof Tree>
 
 declare module 'vue' {
-  export interface GlobalComponents {
-    Tree: typeof Tree
-  }
+    export interface GlobalComponents {
+        Tree: typeof Tree
+    }
 }
